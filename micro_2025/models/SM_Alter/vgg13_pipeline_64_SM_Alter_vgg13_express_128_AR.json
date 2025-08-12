@@ -1,0 +1,178 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/configs/express_128.cfg",
+        "num_hmcs": 64,
+        "num_vaults": 16,
+        "mini_batch_size": 1024,
+        "network": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/topologies/CIFAR10_main_models/vgg13.csv",
+        "run_name": "vgg13",
+        "outdir": "/scratch/user/sabuj.laskar/SuperMesh_2/results/ISCA2025_5/models/SM_Alter",
+        "booksim_network": "SM_Alter",
+        "booksim_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/booksim2/runfiles/mesh/anynet_SM_Alter_64_200.cfg",
+        "allreduce": "pipeline",
+        "verbose": true,
+        "collective": "AR",
+        "message_buffer_size": 32,
+        "message_size": 4096,
+        "synthetic_data_size": 0,
+        "bandwidth": 100,
+        "load_tree": true,
+        "only_save_tree": false,
+        "messages_per_chunk": 3,
+        "save_link_utilization": false,
+        "analytical": false,
+        "per_dim_nodes": 8,
+        "flits_per_packet": 17,
+        "radix": 4,
+        "latency": 20,
+        "per_message_time": 360,
+        "extension": "AR",
+        "pe_array_height": 128,
+        "pe_array_width": 128,
+        "ifmap_sram_size": 4194304,
+        "filter_sram_size": 4194304,
+        "ofmap_sram_size": 4194304,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "total_partial_trees": 2305,
+        "corner_partial_trees": null,
+        "other_partial_trees": null,
+        "corner_set": [
+            0,
+            7,
+            63,
+            56
+        ],
+        "other_pipeline_sets": [
+            [
+                1,
+                15,
+                62,
+                48
+            ],
+            [
+                2,
+                23,
+                61,
+                40
+            ],
+            [
+                3,
+                31,
+                60,
+                32
+            ],
+            [
+                4,
+                39,
+                59,
+                24
+            ],
+            [
+                5,
+                47,
+                58,
+                16
+            ],
+            [
+                6,
+                55,
+                57,
+                8
+            ],
+            [
+                9,
+                14,
+                54,
+                49
+            ],
+            [
+                10,
+                22,
+                53,
+                41
+            ],
+            [
+                11,
+                30,
+                52,
+                33
+            ],
+            [
+                12,
+                38,
+                51,
+                25
+            ],
+            [
+                13,
+                46,
+                50,
+                17
+            ],
+            [
+                18,
+                21,
+                45,
+                42
+            ],
+            [
+                19,
+                29,
+                44,
+                34
+            ],
+            [
+                20,
+                37,
+                43,
+                26
+            ],
+            [
+                27,
+                28,
+                36,
+                35
+            ]
+        ],
+        "remaining_multitree_set": null,
+        "multitree_message_for_pipeline": 0,
+        "nodes": 64,
+        "saved_tree_name": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SavedTrees/SM_Alter/SM_Alter_pipeline_64",
+        "dump": false
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "training_by_layer": null,
+            "allreduce": {
+                "total": 4784425,
+                "reduce_scatter": 2392231
+            },
+            "total": 4784425
+        },
+        "power": {
+            "network": {
+                "dynamic": 5.085347831070273,
+                "static": 37.47475175927769,
+                "total": 42.56009959034796,
+                "router": {
+                    "dynamic": 3.4421489550409747,
+                    "static": 37.117238723501686,
+                    "total": 40.55938767854266
+                },
+                "link": {
+                    "dynamic": 1.6431988760292977,
+                    "static": 0.3575130357760012,
+                    "total": 2.0007119118052987,
+                    "flits": 59247720
+                }
+            }
+        }
+    }
+}

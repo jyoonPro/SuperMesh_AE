@@ -1,0 +1,466 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/configs/express_128.cfg",
+        "num_hmcs": 256,
+        "num_vaults": 16,
+        "mini_batch_size": 4096,
+        "network": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/topologies/conv_nets/alexnet.csv",
+        "run_name": "scalability",
+        "outdir": "/scratch/user/sabuj.laskar/SuperMesh_2/results/ISCA2025/scalability/SM_Alter/outputs/scalability",
+        "booksim_network": "SM_Alter",
+        "booksim_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/booksim2/runfiles/mesh/anynet_SM_Alter_256_200.cfg",
+        "allreduce": "pipeline",
+        "verbose": true,
+        "collective": "AR",
+        "message_buffer_size": 32,
+        "message_size": 4096,
+        "synthetic_data_size": 24576000,
+        "bandwidth": 100,
+        "load_tree": true,
+        "only_save_tree": false,
+        "messages_per_chunk": 3,
+        "save_link_utilization": false,
+        "analytical": false,
+        "per_dim_nodes": 16,
+        "flits_per_packet": 17,
+        "radix": 4,
+        "latency": 20,
+        "per_message_time": 360,
+        "logdir": "/scratch/user/sabuj.laskar/SuperMesh_2/results/ISCA2025/scalability/SM_Alter",
+        "extension": "AR",
+        "pe_array_height": 128,
+        "pe_array_width": 128,
+        "ifmap_sram_size": 4194304,
+        "filter_sram_size": 4194304,
+        "ofmap_sram_size": 4194304,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "total_partial_trees": 2000,
+        "corner_partial_trees": null,
+        "other_partial_trees": null,
+        "corner_set": [
+            0,
+            15,
+            255,
+            240
+        ],
+        "other_pipeline_sets": [
+            [
+                1,
+                31,
+                254,
+                224
+            ],
+            [
+                2,
+                47,
+                253,
+                208
+            ],
+            [
+                3,
+                63,
+                252,
+                192
+            ],
+            [
+                4,
+                79,
+                251,
+                176
+            ],
+            [
+                5,
+                95,
+                250,
+                160
+            ],
+            [
+                6,
+                111,
+                249,
+                144
+            ],
+            [
+                7,
+                127,
+                248,
+                128
+            ],
+            [
+                8,
+                143,
+                247,
+                112
+            ],
+            [
+                9,
+                159,
+                246,
+                96
+            ],
+            [
+                10,
+                175,
+                245,
+                80
+            ],
+            [
+                11,
+                191,
+                244,
+                64
+            ],
+            [
+                12,
+                207,
+                243,
+                48
+            ],
+            [
+                13,
+                223,
+                242,
+                32
+            ],
+            [
+                14,
+                239,
+                241,
+                16
+            ],
+            [
+                17,
+                30,
+                238,
+                225
+            ],
+            [
+                18,
+                46,
+                237,
+                209
+            ],
+            [
+                19,
+                62,
+                236,
+                193
+            ],
+            [
+                20,
+                78,
+                235,
+                177
+            ],
+            [
+                21,
+                94,
+                234,
+                161
+            ],
+            [
+                22,
+                110,
+                233,
+                145
+            ],
+            [
+                23,
+                126,
+                232,
+                129
+            ],
+            [
+                24,
+                142,
+                231,
+                113
+            ],
+            [
+                25,
+                158,
+                230,
+                97
+            ],
+            [
+                26,
+                174,
+                229,
+                81
+            ],
+            [
+                27,
+                190,
+                228,
+                65
+            ],
+            [
+                28,
+                206,
+                227,
+                49
+            ],
+            [
+                29,
+                222,
+                226,
+                33
+            ],
+            [
+                34,
+                45,
+                221,
+                210
+            ],
+            [
+                35,
+                61,
+                220,
+                194
+            ],
+            [
+                36,
+                77,
+                219,
+                178
+            ],
+            [
+                37,
+                93,
+                218,
+                162
+            ],
+            [
+                38,
+                109,
+                217,
+                146
+            ],
+            [
+                39,
+                125,
+                216,
+                130
+            ],
+            [
+                40,
+                141,
+                215,
+                114
+            ],
+            [
+                41,
+                157,
+                214,
+                98
+            ],
+            [
+                42,
+                173,
+                213,
+                82
+            ],
+            [
+                43,
+                189,
+                212,
+                66
+            ],
+            [
+                44,
+                205,
+                211,
+                50
+            ],
+            [
+                51,
+                60,
+                204,
+                195
+            ],
+            [
+                52,
+                76,
+                203,
+                179
+            ],
+            [
+                53,
+                92,
+                202,
+                163
+            ],
+            [
+                54,
+                108,
+                201,
+                147
+            ],
+            [
+                55,
+                124,
+                200,
+                131
+            ],
+            [
+                56,
+                140,
+                199,
+                115
+            ],
+            [
+                57,
+                156,
+                198,
+                99
+            ],
+            [
+                58,
+                172,
+                197,
+                83
+            ],
+            [
+                59,
+                188,
+                196,
+                67
+            ],
+            [
+                68,
+                75,
+                187,
+                180
+            ],
+            [
+                69,
+                91,
+                186,
+                164
+            ],
+            [
+                70,
+                107,
+                185,
+                148
+            ],
+            [
+                71,
+                123,
+                184,
+                132
+            ],
+            [
+                72,
+                139,
+                183,
+                116
+            ],
+            [
+                73,
+                155,
+                182,
+                100
+            ],
+            [
+                74,
+                171,
+                181,
+                84
+            ],
+            [
+                85,
+                90,
+                170,
+                165
+            ],
+            [
+                86,
+                106,
+                169,
+                149
+            ],
+            [
+                87,
+                122,
+                168,
+                133
+            ],
+            [
+                88,
+                138,
+                167,
+                117
+            ],
+            [
+                89,
+                154,
+                166,
+                101
+            ],
+            [
+                102,
+                105,
+                153,
+                150
+            ],
+            [
+                103,
+                121,
+                152,
+                134
+            ],
+            [
+                104,
+                137,
+                151,
+                118
+            ],
+            [
+                119,
+                120,
+                136,
+                135
+            ]
+        ],
+        "remaining_multitree_set": null,
+        "multitree_message_for_pipeline": 0,
+        "nodes": 256,
+        "saved_tree_name": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SavedTrees/SM_Alter/SM_Alter_pipeline_256"
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "training_by_layer": null,
+            "allreduce": {
+                "total": 4187951,
+                "reduce_scatter": 2094033
+            },
+            "total": 4187951
+        },
+        "power": {
+            "network": {
+                "dynamic": 20.39502751009412,
+                "static": 149.8990070371116,
+                "total": 170.2940345472057,
+                "router": {
+                    "dynamic": 13.80212016213979,
+                    "static": 148.46895489400757,
+                    "total": 162.27107505614737
+                },
+                "link": {
+                    "dynamic": 6.5929073479543305,
+                    "static": 1.430052143104022,
+                    "total": 8.022959491058353,
+                    "flits": 208080000
+                }
+            }
+        }
+    }
+}

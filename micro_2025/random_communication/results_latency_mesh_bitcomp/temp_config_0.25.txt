@@ -1,0 +1,33 @@
+num_vcs     = 4;
+vc_buf_size = 1;
+wait_for_tail_credit = 1;
+vc_allocator = islip;
+sw_allocator = islip;
+alloc_iters  = 2;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 1.0;
+
+sim_type = latency;
+warmup_periods = 3;
+sample_period  = 1000;
+sim_count          = 1;
+
+topology = mesh;
+k  = 4;
+n  = 2;
+routing_function = dor;
+packet_size = 1;
+use_read_write = 0;
+traffic       = bitcomp;
+// injection_rate = 0.2;
+// watch_file = abc.txt;
+// watch_out = abc.txt;
+injection_rate = 0.25;

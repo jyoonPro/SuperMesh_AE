@@ -1,0 +1,69 @@
+3x3 Mesh
+[Synthesis Result]
+	- Time to solve: 566.77 us (0.00 s)
+	- Synthesized Collective Time: 80125000 ps (80.12 us)
+
+4x4 Mesh
+[Synthesis Result]
+	- Time to solve: 2034.96 us (0.00 s)
+	- Synthesized Collective Time: 120187500 ps (120.19 us)
+
+5x5 Mesh
+[Synthesis Result]
+	- Time to solve: 7401.70 us (0.01 s)
+	- Synthesized Collective Time: 160250000 ps (160.25 us)
+
+6x6 Mesh
+[Synthesis Result]
+	- Time to solve: 9507.67 us (0.01 s)
+	- Synthesized Collective Time: 200312500 ps (200.31 us)
+
+7x7 Mesh
+[Synthesis Result]
+	- Time to solve: 7401.70 us (0.01 s)
+	- Synthesized Collective Time: 160250000 ps (160.25 us)
+
+8x8 Mesh
+[Synthesis Result]
+	- Time to solve: 62108.17 us (0.06 s)
+	- Synthesized Collective Time: 280437500 ps (280.44 us)
+
+9x9 Mesh
+[Synthesis Result]
+	- Time to solve: 199134.37 us (0.20 s)
+	- Synthesized Collective Time: 320500000 ps (320.50 us)
+
+10x10 Mesh
+[Synthesis Result]
+	- Time to solve: 281202.10 us (0.28 s)
+	- Synthesized Collective Time: 360562500 ps (360.56 us)
+
+11x11 Mesh
+[Synthesis Result]
+	- Time to solve: 569773.93 us (0.57 s)
+	- Synthesized Collective Time: 400625000 ps (400.62 us)
+
+12x12 Mesh
+[Synthesis Result]
+	- Time to solve: 1062025.61 us (1.06 s)
+	- Synthesized Collective Time: 440687500 ps (440.69 us)
+
+13x13 Mesh
+[Synthesis Result]
+	- Time to solve: 1886846.16 us (1.89 s)
+	- Synthesized Collective Time: 480750000 ps (480.75 us)
+
+14x14 Mesh
+[Synthesis Result]
+	- Time to solve: 3253157.38 us (3.25 s)
+	- Synthesized Collective Time: 520812500 ps (520.81 us)
+
+15x15 Mesh
+[Synthesis Result]
+	- Time to solve: 5653292.43 us (5.65 s)
+	- Synthesized Collective Time: 560875000 ps (560.88 us)
+
+16x16 Mesh
+[Synthesis Result]
+	- Time to solve: 8973209.33 us (8.97 s)
+	- Synthesized Collective Time: 600937500 ps (600.94 us)

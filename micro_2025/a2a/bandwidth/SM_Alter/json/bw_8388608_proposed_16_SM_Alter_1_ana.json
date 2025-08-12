@@ -1,0 +1,85 @@
+{
+    "configuration": {
+        "num_hmcs": 16,
+        "run_name": "bw_8388608",
+        "outdir": "/home/sabuj/Sabuj/Research/AllToAllProject/micro_analytical/supermesh/bandwidth/SM_Alter",
+        "booksim_network": "SM_Alter",
+        "all2all": "proposed",
+        "synthetic_data_size": 8388608,
+        "chunks_per_node": 1,
+        "save_link_utilization": false,
+        "topology_in_dimension": "FC_Ring_SW",
+        "variable_chunk": false,
+        "analytical": true,
+        "load_schedule": false,
+        "save_schedule": false,
+        "message_size": 4096,
+        "message_buffer_size": 32,
+        "booksim_config": "/home/sabuj/Sabuj/Research/AllToAllProject/src/booksim2/runfiles/mesh/anynet_SM_Alter_16_200_v2.cfg",
+        "flits_per_packet": 16,
+        "radix": 4,
+        "merge_chunks": true,
+        "messages_per_chunk": 512,
+        "split_messages": [
+            [
+                512
+            ],
+            [
+                512
+            ],
+            [
+                512
+            ],
+            [
+                512
+            ],
+            [
+                512
+            ],
+            [
+                512
+            ],
+            [
+                512
+            ],
+            [
+                512
+            ],
+            [
+                512
+            ],
+            [
+                512
+            ],
+            [
+                512
+            ],
+            [
+                512
+            ],
+            [
+                512
+            ],
+            [
+                512
+            ],
+            [
+                512
+            ],
+            [
+                512
+            ]
+        ],
+        "total_messages": 512,
+        "nodes": 16,
+        "saved_tree_name": "/home/sabuj/Sabuj/Research/AllToAllProject/src/SavedTrees/SM_Alter/SM_Alter_proposed_16"
+    },
+    "results": {
+        "performance": {
+            "a2a": 3290112,
+            "total_intra_node_merged_chunks": 326,
+            "total_inter_node_merged_chunks": 0,
+            "schedule_generation_time": 0.2764904499053955
+        }
+    }
+}

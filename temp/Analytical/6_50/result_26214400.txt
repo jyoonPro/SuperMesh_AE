@@ -1,0 +1,25 @@
+
+-------------------------------------------------------------------------------------------------------
+CONFIGURATIONS
+-------------------------------------------------------------------------------------------------------
+Chunks                              4
+Mesh                                6 X 6
+Bandwidth                           200
+Message Size                        8480
+Flits per Packet                    16
+Latencies Calculated                22
+Parameters in Model                 26214400
+Number of messages in Model         12366
+Number of fermat messages in Model  8
+
+-------------------------------------------------------------------------------------------------------
+ANALYTICAL TIME CALCULATION
+-------------------------------------------------------------------------------------------------------
+Multitree All Reduce					4594656.0
+1D Ring All Reduce (Unidirectional)		8463840.0
+1D Ring All Reduce (Bidirectional)		4231920.0
+2D All Reduce O(n^2)					21166933.333333332
+2D All Reduce optimized O(n)			7620096.0
+Fermat Hiererchical All Reduce					3459456.0
+Fermat All Reduce					4460544
+Fermat All Reduce 2					2528064

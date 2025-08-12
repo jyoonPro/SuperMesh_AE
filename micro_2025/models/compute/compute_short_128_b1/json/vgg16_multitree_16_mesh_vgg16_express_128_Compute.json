@@ -1,0 +1,92 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/configs/express_128.cfg",
+        "num_hmcs": 16,
+        "num_vaults": 1,
+        "mini_batch_size": 16,
+        "network": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/topologies/CIFAR10_main_models/vgg16.csv",
+        "run_name": "vgg16",
+        "outdir": "/scratch/user/sabuj.laskar/SuperMesh_2/results/micro2025/compute_short_128_b1",
+        "booksim_network": "mesh",
+        "booksim_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/booksim2/runfiles/mesh/anynet_mesh_16_200.cfg",
+        "allreduce": "multitree",
+        "verbose": false,
+        "collective": "Compute",
+        "message_buffer_size": 32,
+        "message_size": 4096,
+        "synthetic_data_size": 0,
+        "bandwidth": 100,
+        "load_tree": true,
+        "only_save_tree": false,
+        "messages_per_chunk": 3,
+        "save_link_utilization": false,
+        "analytical": false,
+        "per_dim_nodes": 4,
+        "flits_per_packet": 17,
+        "radix": 4,
+        "latency": 20,
+        "per_message_time": 360,
+        "extension": "Compute",
+        "pe_array_height": 128,
+        "pe_array_width": 128,
+        "ifmap_sram_size": 4194304,
+        "filter_sram_size": 4194304,
+        "ofmap_sram_size": 4194304,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "multitree_total_message": 2053,
+        "nodes": 16,
+        "saved_tree_name": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SavedTrees/mesh/mesh_multitree_16",
+        "dump": false
+    },
+    "results": {
+        "performance": {
+            "training": 1089536,
+            "training_by_layer": {
+                "15": 280045,
+                "14": 542444,
+                "13": 575467,
+                "12": 612586,
+                "11": 649705,
+                "10": 686824,
+                "9": 723946,
+                "8": 761068,
+                "7": 779758,
+                "6": 789264,
+                "5": 798770,
+                "4": 803668,
+                "3": 808118,
+                "2": 811720,
+                "1": 821146,
+                "0": 826834
+            },
+            "total": 1089537,
+            "allreduce": {
+                "total": 1
+            }
+        },
+        "power": {
+            "network": {
+                "dynamic": NaN,
+                "static": 9.36868793981943,
+                "total": NaN,
+                "router": {
+                    "dynamic": NaN,
+                    "static": 9.27930968087543,
+                    "total": NaN
+                },
+                "link": {
+                    "dynamic": NaN,
+                    "static": 0.08937825894400027,
+                    "total": NaN,
+                    "flits": 0
+                }
+            }
+        }
+    }
+}

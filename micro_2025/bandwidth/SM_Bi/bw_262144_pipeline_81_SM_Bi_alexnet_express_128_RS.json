@@ -1,0 +1,205 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/configs/express_128.cfg",
+        "num_hmcs": 81,
+        "num_vaults": 16,
+        "mini_batch_size": 1296,
+        "network": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/topologies/conv_nets/alexnet.csv",
+        "run_name": "bw_262144",
+        "outdir": "/scratch/user/sabuj.laskar/SuperMesh_2/results/ISCA2025_11/bandwidth/SM_Bi",
+        "booksim_network": "SM_Bi",
+        "booksim_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/booksim2/runfiles/mesh/anynet_SM_Bi_81_200.cfg",
+        "allreduce": "pipeline",
+        "verbose": true,
+        "collective": "RS",
+        "message_buffer_size": 32,
+        "message_size": 4096,
+        "synthetic_data_size": 262144,
+        "bandwidth": 100,
+        "load_tree": true,
+        "only_save_tree": false,
+        "messages_per_chunk": 3,
+        "save_link_utilization": true,
+        "analytical": false,
+        "per_dim_nodes": 9,
+        "flits_per_packet": 17,
+        "radix": 5,
+        "latency": 20,
+        "per_message_time": 360,
+        "extension": "RS",
+        "pe_array_height": 128,
+        "pe_array_width": 128,
+        "ifmap_sram_size": 4194304,
+        "filter_sram_size": 4194304,
+        "ofmap_sram_size": 4194304,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "total_partial_trees": null,
+        "corner_partial_trees": 2,
+        "other_partial_trees": 2,
+        "corner_set": [
+            0,
+            8,
+            80,
+            72
+        ],
+        "other_pipeline_sets": [
+            [
+                1,
+                17,
+                79,
+                63
+            ],
+            [
+                2,
+                26,
+                78,
+                54
+            ],
+            [
+                3,
+                35,
+                77,
+                45
+            ],
+            [
+                4,
+                44,
+                76,
+                36
+            ],
+            [
+                5,
+                53,
+                75,
+                27
+            ],
+            [
+                6,
+                62,
+                74,
+                18
+            ],
+            [
+                7,
+                71,
+                73,
+                9
+            ],
+            [
+                10,
+                16,
+                70,
+                64
+            ],
+            [
+                11,
+                25,
+                69,
+                55
+            ],
+            [
+                12,
+                34,
+                68,
+                46
+            ],
+            [
+                13,
+                43,
+                67,
+                37
+            ],
+            [
+                14,
+                52,
+                66,
+                28
+            ],
+            [
+                15,
+                61,
+                65,
+                19
+            ],
+            [
+                20,
+                24,
+                60,
+                56
+            ],
+            [
+                21,
+                33,
+                59,
+                47
+            ],
+            [
+                22,
+                42,
+                58,
+                38
+            ],
+            [
+                23,
+                51,
+                57,
+                29
+            ],
+            [
+                30,
+                32,
+                50,
+                48
+            ],
+            [
+                31,
+                41,
+                49,
+                39
+            ],
+            [
+                40
+            ]
+        ],
+        "remaining_multitree_set": null,
+        "multitree_message_for_pipeline": 4,
+        "nodes": 81,
+        "saved_tree_name": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SavedTrees/SM_Bi/SM_Bi_pipeline_81",
+        "dump": false
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "training_by_layer": null,
+            "allreduce": {
+                "total": 228629,
+                "reduce_scatter": 228614
+            },
+            "total": 228629
+        },
+        "power": {
+            "network": {
+                "dynamic": 1.9129198991871506,
+                "static": 47.54210205431181,
+                "total": 49.455021953498964,
+                "router": {
+                    "dynamic": 1.529309572268303,
+                    "static": 46.97650525943181,
+                    "total": 48.505814831700114
+                },
+                "link": {
+                    "dynamic": 0.3836103269188476,
+                    "static": 0.5655967948800011,
+                    "total": 0.9492071217988487,
+                    "flits": 660960
+                }
+            }
+        }
+    }
+}

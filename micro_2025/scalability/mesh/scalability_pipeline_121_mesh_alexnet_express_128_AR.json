@@ -1,0 +1,86 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/configs/express_128.cfg",
+        "num_hmcs": 121,
+        "num_vaults": 16,
+        "mini_batch_size": 1936,
+        "network": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/topologies/conv_nets/alexnet.csv",
+        "run_name": "scalability",
+        "outdir": "/scratch/user/sabuj.laskar/SuperMesh_2/results/ISCA2025/scalability/mesh/outputs/scalability",
+        "booksim_network": "mesh",
+        "booksim_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/booksim2/runfiles/mesh/anynet_mesh_121_200.cfg",
+        "allreduce": "pipeline",
+        "verbose": true,
+        "collective": "AR",
+        "message_buffer_size": 32,
+        "message_size": 4096,
+        "synthetic_data_size": 11616000,
+        "bandwidth": 100,
+        "load_tree": true,
+        "only_save_tree": false,
+        "messages_per_chunk": 3,
+        "save_link_utilization": false,
+        "analytical": false,
+        "per_dim_nodes": 11,
+        "flits_per_packet": 17,
+        "radix": 4,
+        "latency": 20,
+        "per_message_time": 360,
+        "logdir": "/scratch/user/sabuj.laskar/SuperMesh_2/results/ISCA2025/scalability/mesh",
+        "extension": "AR",
+        "pe_array_height": 128,
+        "pe_array_width": 128,
+        "ifmap_sram_size": 4194304,
+        "filter_sram_size": 4194304,
+        "ofmap_sram_size": 4194304,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "total_partial_trees": 1261,
+        "corner_partial_trees": null,
+        "other_partial_trees": null,
+        "corner_set": [
+            0,
+            10,
+            120
+        ],
+        "other_pipeline_sets": null,
+        "remaining_multitree_set": null,
+        "multitree_message_for_pipeline": 0,
+        "nodes": 121,
+        "saved_tree_name": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SavedTrees/mesh/mesh_pipeline_121"
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "training_by_layer": null,
+            "allreduce": {
+                "total": 2642005,
+                "reduce_scatter": 1321026
+            },
+            "total": 2642005
+        },
+        "power": {
+            "network": {
+                "dynamic": 7.5141789775520875,
+                "static": 70.85070254488434,
+                "total": 78.36488152243643,
+                "router": {
+                    "dynamic": 5.195053558423577,
+                    "static": 70.17477946162035,
+                    "total": 75.36983302004393
+                },
+                "link": {
+                    "dynamic": 2.3191254191285102,
+                    "static": 0.6759230832639951,
+                    "total": 2.995048502392505,
+                    "flits": 46175298
+                }
+            }
+        }
+    }
+}

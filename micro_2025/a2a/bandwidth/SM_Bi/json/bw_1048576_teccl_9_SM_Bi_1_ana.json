@@ -1,0 +1,64 @@
+{
+    "configuration": {
+        "num_hmcs": 9,
+        "run_name": "bw_1048576",
+        "outdir": "/home/sabuj/Sabuj/Research/AllToAllProject/micro_analytical/supermesh/bandwidth/SM_Bi",
+        "booksim_network": "SM_Bi",
+        "all2all": "teccl",
+        "synthetic_data_size": 1048576,
+        "chunks_per_node": 1,
+        "save_link_utilization": false,
+        "topology_in_dimension": "FC_Ring_SW",
+        "variable_chunk": false,
+        "analytical": true,
+        "load_schedule": false,
+        "save_schedule": false,
+        "message_size": 4096,
+        "message_buffer_size": 32,
+        "booksim_config": "/home/sabuj/Sabuj/Research/AllToAllProject/src/booksim2/runfiles/mesh/anynet_SM_Bi_9_200_v2.cfg",
+        "flits_per_packet": 16,
+        "radix": 4,
+        "merge_chunks": false,
+        "one_chunk_total_message": 114,
+        "messages_per_chunk": 114,
+        "split_messages": [
+            [
+                114
+            ],
+            [
+                114
+            ],
+            [
+                114
+            ],
+            [
+                114
+            ],
+            [
+                114
+            ],
+            [
+                114
+            ],
+            [
+                114
+            ],
+            [
+                114
+            ],
+            [
+                114
+            ]
+        ],
+        "total_messages": 114,
+        "nodes": 9,
+        "saved_tree_name": "/home/sabuj/Sabuj/Research/AllToAllProject/src/SavedTrees/SM_Bi/SM_Bi_teccl_9"
+    },
+    "results": {
+        "performance": {
+            "a2a": 213180,
+            "total_intra_node_merged_chunks": 0,
+            "total_inter_node_merged_chunks": 0
+        }
+    }
+}

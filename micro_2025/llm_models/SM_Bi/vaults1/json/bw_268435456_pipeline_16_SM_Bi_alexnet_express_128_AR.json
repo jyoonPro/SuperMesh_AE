@@ -1,0 +1,112 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/configs/express_128.cfg",
+        "num_hmcs": 16,
+        "num_vaults": 1,
+        "mini_batch_size": 256,
+        "network": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/topologies/conv_nets/alexnet.csv",
+        "run_name": "bw_268435456",
+        "outdir": "/scratch/user/sabuj.laskar/SuperMesh_2/results/micro_2025/llm_models/SM_Bi/vaults1",
+        "booksim_network": "SM_Bi",
+        "booksim_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/booksim2/runfiles/mesh/anynet_SM_Bi_16_200.cfg",
+        "allreduce": "pipeline",
+        "verbose": false,
+        "collective": "AR",
+        "message_buffer_size": 32,
+        "message_size": 4096,
+        "synthetic_data_size": 268435456,
+        "bandwidth": 100,
+        "load_tree": true,
+        "only_save_tree": false,
+        "messages_per_chunk": 3,
+        "save_link_utilization": false,
+        "analytical": false,
+        "per_dim_nodes": 4,
+        "flits_per_packet": 17,
+        "radix": 5,
+        "latency": 20,
+        "per_message_time": 360,
+        "extension": "AR",
+        "pe_array_height": 128,
+        "pe_array_width": 128,
+        "ifmap_sram_size": 4194304,
+        "filter_sram_size": 4194304,
+        "ofmap_sram_size": 4194304,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "total_partial_trees": 21846,
+        "corner_partial_trees": null,
+        "other_partial_trees": null,
+        "corner_set": [
+            0,
+            3,
+            15,
+            12
+        ],
+        "other_pipeline_sets": [
+            [
+                1,
+                7,
+                14,
+                8
+            ],
+            [
+                2,
+                11,
+                13,
+                4
+            ],
+            [
+                5,
+                6,
+                10,
+                9
+            ]
+        ],
+        "remaining_multitree_set": null,
+        "multitree_message_for_pipeline": 0,
+        "nodes": 16,
+        "saved_tree_name": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SavedTrees/SM_Bi/SM_Bi_pipeline_16",
+        "dump": false
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "training_by_layer": null,
+            "total": 45100706,
+            "allreduce": {
+                "total": 45100706,
+                "reduce_scatter": 22550455
+            },
+            "total_allgather_packets": 3932280,
+            "total_allgather_waiting_cycles": 17734395368646,
+            "total_allgather_waiting_cycles_before": 1336975200,
+            "average_allgather_waiting_cycles": 4509952,
+            "average_allgather_waiting_cycles_before": 340,
+            "average_allgather_waiting_cycles_total": 4510292
+        },
+        "power": {
+            "network": {
+                "dynamic": 1.2248225445921217,
+                "static": 9.391032504555431,
+                "total": 10.615855049147553,
+                "router": {
+                    "dynamic": 0.8314642338390297,
+                    "static": 9.27930968087543,
+                    "total": 10.11077391471446
+                },
+                "link": {
+                    "dynamic": 0.393358310753092,
+                    "static": 0.11172282368000037,
+                    "total": 0.5050811344330924,
+                    "flits": 133697520
+                }
+            }
+        }
+    }
+}

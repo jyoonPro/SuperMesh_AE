@@ -1,0 +1,82 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/configs/express_128.cfg",
+        "num_hmcs": 196,
+        "num_vaults": 16,
+        "mini_batch_size": 3136,
+        "network": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/topologies/conv_nets/alexnet.csv",
+        "run_name": "scalability",
+        "outdir": "/scratch/user/sabuj.laskar/SuperMesh_2/results/micro_2025/scalability/SM_Bi",
+        "booksim_network": "SM_Bi",
+        "booksim_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/booksim2/runfiles/mesh/anynet_SM_Bi_196_200_v2.cfg",
+        "allreduce": "tacos",
+        "verbose": true,
+        "collective": "AR",
+        "message_buffer_size": 32,
+        "message_size": 4096,
+        "synthetic_data_size": 18816000,
+        "bandwidth": 100,
+        "load_tree": true,
+        "only_save_tree": false,
+        "messages_per_chunk": 3,
+        "save_link_utilization": false,
+        "analytical": false,
+        "per_dim_nodes": 14,
+        "flits_per_packet": 17,
+        "radix": 5,
+        "latency": 20,
+        "per_message_time": 360,
+        "extension": "AR",
+        "pe_array_height": 128,
+        "pe_array_width": 128,
+        "ifmap_sram_size": 4194304,
+        "filter_sram_size": 4194304,
+        "ofmap_sram_size": 4194304,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "tacos_total_message": 24,
+        "nodes": 196,
+        "saved_tree_name": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SavedTrees/SM_Bi/SM_Bi_tacos_196",
+        "dump": false
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "training_by_layer": null,
+            "allreduce": {
+                "total": 3278228,
+                "reduce_scatter": 1639393
+            },
+            "total": 3278228,
+            "total_allgather_packets": 3669120,
+            "total_allgather_waiting_cycles": 486250224936,
+            "total_allgather_waiting_cycles_before": 12759424800,
+            "average_allgather_waiting_cycles": 132525,
+            "average_allgather_waiting_cycles_before": 3477,
+            "average_allgather_waiting_cycles_total": 136002
+        },
+        "power": {
+            "network": {
+                "dynamic": 15.619803938236576,
+                "static": 115.04014818080437,
+                "total": 130.65995211904095,
+                "router": {
+                    "dynamic": 10.57028653106283,
+                    "static": 113.67154359072435,
+                    "total": 124.24183012178719
+                },
+                "link": {
+                    "dynamic": 5.049517407173744,
+                    "static": 1.3686045900800157,
+                    "total": 6.41812199725376,
+                    "flits": 124750080
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/configs/express_128.cfg",
+        "num_hmcs": 49,
+        "num_vaults": 16,
+        "mini_batch_size": 784,
+        "network": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/topologies/conv_nets/alexnet.csv",
+        "run_name": "scalability",
+        "outdir": "/scratch/user/sabuj.laskar/SuperMesh_2/results/ISCA2025_11/scalability/SM_Bi",
+        "booksim_network": "SM_Bi",
+        "booksim_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/booksim2/runfiles/mesh/anynet_SM_Bi_49_200.cfg",
+        "allreduce": "pipeline",
+        "verbose": true,
+        "collective": "AG",
+        "message_buffer_size": 32,
+        "message_size": 4096,
+        "synthetic_data_size": 4704000,
+        "bandwidth": 100,
+        "load_tree": true,
+        "only_save_tree": false,
+        "messages_per_chunk": 3,
+        "save_link_utilization": true,
+        "analytical": false,
+        "per_dim_nodes": 7,
+        "flits_per_packet": 17,
+        "radix": 5,
+        "latency": 20,
+        "per_message_time": 360,
+        "extension": "AG",
+        "pe_array_height": 128,
+        "pe_array_width": 128,
+        "ifmap_sram_size": 4194304,
+        "filter_sram_size": 4194304,
+        "ofmap_sram_size": 4194304,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "total_partial_trees": null,
+        "corner_partial_trees": 32,
+        "other_partial_trees": 32,
+        "corner_set": [
+            0,
+            6,
+            48,
+            42
+        ],
+        "other_pipeline_sets": [
+            [
+                1,
+                13,
+                47,
+                35
+            ],
+            [
+                2,
+                20,
+                46,
+                28
+            ],
+            [
+                3,
+                27,
+                45,
+                21
+            ],
+            [
+                4,
+                34,
+                44,
+                14
+            ],
+            [
+                5,
+                41,
+                43,
+                7
+            ],
+            [
+                8,
+                12,
+                40,
+                36
+            ],
+            [
+                9,
+                19,
+                39,
+                29
+            ],
+            [
+                10,
+                26,
+                38,
+                22
+            ],
+            [
+                11,
+                33,
+                37,
+                15
+            ],
+            [
+                16,
+                18,
+                32,
+                30
+            ],
+            [
+                17,
+                25,
+                31,
+                23
+            ],
+            [
+                24
+            ]
+        ],
+        "remaining_multitree_set": null,
+        "multitree_message_for_pipeline": 94,
+        "nodes": 49,
+        "saved_tree_name": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SavedTrees/SM_Bi/SM_Bi_pipeline_49",
+        "dump": false
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "training_by_layer": null,
+            "allreduce": {
+                "total": 501556,
+                "reduce_scatter": 0
+            },
+            "total": 501556
+        },
+        "power": {
+            "network": {
+                "dynamic": 3.246584328958371,
+                "static": 28.760037045200974,
+                "total": 32.006621374159344,
+                "router": {
+                    "dynamic": 2.2310712888605018,
+                    "static": 28.417885897680975,
+                    "total": 30.648957186541477
+                },
+                "link": {
+                    "dynamic": 1.0155130400978696,
+                    "static": 0.3421511475200008,
+                    "total": 1.3576641876178703,
+                    "flits": 3838464
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+router 0 node 0 node 1 node 2 node 3 node 4 router 1 10 router 5 10
+router 1 node 5 node 6 node 7 node 8 node 9 router 2 10 router 6 20 router 0 10
+router 2 node 10 node 11 node 12 node 13 node 14 router 3 10 router 7 20 router 1 10
+router 3 node 15 node 16 node 17 node 18 node 19 router 4 10 router 8 20 router 2 10
+router 4 node 20 node 21 node 22 node 23 node 24 router 3 10 router 9 10
+router 5 node 25 node 26 node 27 node 28 node 29 router 0 10 router 6 20 router 10 10
+router 6 node 30 node 31 node 32 node 33 node 34 router 1 20 router 7 20 router 11 20 router 5 20
+router 7 node 35 node 36 node 37 node 38 node 39 router 2 20 router 8 20 router 12 20 router 6 20
+router 8 node 40 node 41 node 42 node 43 node 44 router 3 20 router 9 20 router 13 20 router 7 20
+router 9 node 45 node 46 node 47 node 48 node 49 router 14 10 router 8 20 router 4 10
+router 10 node 50 node 51 node 52 node 53 node 54 router 5 10 router 11 20 router 15 10
+router 11 node 55 node 56 node 57 node 58 node 59 router 6 20 router 12 20 router 16 20 router 10 20
+router 12 node 60 node 61 node 62 node 63 node 64 router 7 20 router 13 20 router 17 20 router 11 20
+router 13 node 65 node 66 node 67 node 68 node 69 router 8 20 router 14 20 router 18 20 router 12 20
+router 14 node 70 node 71 node 72 node 73 node 74 router 19 10 router 13 20 router 9 10
+router 15 node 75 node 76 node 77 node 78 node 79 router 10 10 router 16 20 router 20 10
+router 16 node 80 node 81 node 82 node 83 node 84 router 11 20 router 17 20 router 21 20 router 15 20
+router 17 node 85 node 86 node 87 node 88 node 89 router 12 20 router 18 20 router 22 20 router 16 20
+router 18 node 90 node 91 node 92 node 93 node 94 router 13 20 router 19 20 router 23 20 router 17 20
+router 19 node 95 node 96 node 97 node 98 node 99 router 24 10 router 18 20 router 14 10
+router 20 node 100 node 101 node 102 node 103 node 104 router 21 10 router 15 10
+router 21 node 105 node 106 node 107 node 108 node 109 router 16 20 router 20 10 router 22 10
+router 22 node 110 node 111 node 112 node 113 node 114 router 17 20 router 21 10 router 23 10
+router 23 node 115 node 116 node 117 node 118 node 119 router 18 20 router 22 10 router 24 10
+router 24 node 120 node 121 node 122 node 123 node 124 router 19 10 router 23 10

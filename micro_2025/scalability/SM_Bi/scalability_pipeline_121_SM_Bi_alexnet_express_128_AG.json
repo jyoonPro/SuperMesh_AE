@@ -1,0 +1,265 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/configs/express_128.cfg",
+        "num_hmcs": 121,
+        "num_vaults": 16,
+        "mini_batch_size": 1936,
+        "network": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SCALE-Sim/topologies/conv_nets/alexnet.csv",
+        "run_name": "scalability",
+        "outdir": "/scratch/user/sabuj.laskar/SuperMesh_2/results/ISCA2025_11/scalability/SM_Bi",
+        "booksim_network": "SM_Bi",
+        "booksim_config": "/scratch/user/sabuj.laskar/SuperMesh_2/src/booksim2/runfiles/mesh/anynet_SM_Bi_121_200.cfg",
+        "allreduce": "pipeline",
+        "verbose": true,
+        "collective": "AG",
+        "message_buffer_size": 32,
+        "message_size": 4096,
+        "synthetic_data_size": 11616000,
+        "bandwidth": 100,
+        "load_tree": true,
+        "only_save_tree": false,
+        "messages_per_chunk": 3,
+        "save_link_utilization": true,
+        "analytical": false,
+        "per_dim_nodes": 11,
+        "flits_per_packet": 17,
+        "radix": 5,
+        "latency": 20,
+        "per_message_time": 360,
+        "extension": "AG",
+        "pe_array_height": 128,
+        "pe_array_width": 128,
+        "ifmap_sram_size": 4194304,
+        "filter_sram_size": 4194304,
+        "ofmap_sram_size": 4194304,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "total_partial_trees": null,
+        "corner_partial_trees": 32,
+        "other_partial_trees": 32,
+        "corner_set": [
+            0,
+            10,
+            120,
+            110
+        ],
+        "other_pipeline_sets": [
+            [
+                1,
+                21,
+                119,
+                99
+            ],
+            [
+                2,
+                32,
+                118,
+                88
+            ],
+            [
+                3,
+                43,
+                117,
+                77
+            ],
+            [
+                4,
+                54,
+                116,
+                66
+            ],
+            [
+                5,
+                65,
+                115,
+                55
+            ],
+            [
+                6,
+                76,
+                114,
+                44
+            ],
+            [
+                7,
+                87,
+                113,
+                33
+            ],
+            [
+                8,
+                98,
+                112,
+                22
+            ],
+            [
+                9,
+                109,
+                111,
+                11
+            ],
+            [
+                12,
+                20,
+                108,
+                100
+            ],
+            [
+                13,
+                31,
+                107,
+                89
+            ],
+            [
+                14,
+                42,
+                106,
+                78
+            ],
+            [
+                15,
+                53,
+                105,
+                67
+            ],
+            [
+                16,
+                64,
+                104,
+                56
+            ],
+            [
+                17,
+                75,
+                103,
+                45
+            ],
+            [
+                18,
+                86,
+                102,
+                34
+            ],
+            [
+                19,
+                97,
+                101,
+                23
+            ],
+            [
+                24,
+                30,
+                96,
+                90
+            ],
+            [
+                25,
+                41,
+                95,
+                79
+            ],
+            [
+                26,
+                52,
+                94,
+                68
+            ],
+            [
+                27,
+                63,
+                93,
+                57
+            ],
+            [
+                28,
+                74,
+                92,
+                46
+            ],
+            [
+                29,
+                85,
+                91,
+                35
+            ],
+            [
+                36,
+                40,
+                84,
+                80
+            ],
+            [
+                37,
+                51,
+                83,
+                69
+            ],
+            [
+                38,
+                62,
+                82,
+                58
+            ],
+            [
+                39,
+                73,
+                81,
+                47
+            ],
+            [
+                48,
+                50,
+                72,
+                70
+            ],
+            [
+                49,
+                61,
+                71,
+                59
+            ],
+            [
+                60
+            ]
+        ],
+        "remaining_multitree_set": null,
+        "multitree_message_for_pipeline": 94,
+        "nodes": 121,
+        "saved_tree_name": "/scratch/user/sabuj.laskar/SuperMesh_2/src/SavedTrees/SM_Bi/SM_Bi_pipeline_121",
+        "dump": false
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "training_by_layer": null,
+            "allreduce": {
+                "total": 1343618,
+                "reduce_scatter": 0
+            },
+            "total": 1343618
+        },
+        "power": {
+            "network": {
+                "dynamic": 7.570468733565392,
+                "static": 71.01968331570033,
+                "total": 78.59015204926573,
+                "router": {
+                    "dynamic": 5.230236467158032,
+                    "static": 70.17477946162035,
+                    "total": 75.40501592877838
+                },
+                "link": {
+                    "dynamic": 2.3402322664073605,
+                    "static": 0.8449038540799858,
+                    "total": 3.1851361204873463,
+                    "flits": 23696640
+                }
+            }
+        }
+    }
+}
