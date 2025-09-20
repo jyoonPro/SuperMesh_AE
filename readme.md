@@ -119,3 +119,12 @@ Note that most scripts execute multiple simulations in parallel, so running them
 Executing the scripts will create a `micro_2025_new` folder in the root directory, where all outputs will be stored. Each simulation will generate a log file and a JSON file—the JSON files (containing the results) will be in the `json` folder, and the logs in the `logs` folder.
 
 The number of simulation cycles can be found in the `results/performance` section of each JSON file.
+
+## License
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE.txt) file for details.
+
+## Contact
+For questions and support, please open an issue on GitHub or contact the authors directly.
+
+## Acknowledgments
+Portions of this research were conducted with the advanced computing resources provided by Texas A\&M High Performance Research Computing.
