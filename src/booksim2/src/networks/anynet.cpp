@@ -61,8 +61,6 @@ map<int, int>* global_routing_table;
 
 AnyNet::AnyNet( const Configuration &config, const string & name )
   :  Network( config, name ){
-
-  cout << "Here" << endl;
   router_list.resize(2);
   _ComputeSize( config );
   _Alloc( );
@@ -92,8 +90,6 @@ void AnyNet::_ComputeSize( const Configuration &config ){
     cout<<"No supermesh_topology is provided"<<endl;
     exit(-1);
   }
-
-  cout << "Hey Bro" << endl;
 
   //parse the network description file
   readFile();
