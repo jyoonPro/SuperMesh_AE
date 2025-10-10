@@ -17,6 +17,7 @@
 #include "model/timing_graph/ElectricalTimingOptimizer.h"
 #include "model/PortInfo.h"
 
+#include <cstdint>
 #include <string>
 using std::string;
 
